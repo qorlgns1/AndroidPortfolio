@@ -64,25 +64,25 @@ public class MainActivity extends AppCompatActivity {
                 int idx = searchtype.getSelectedItemPosition();
                 if(idx == 0){
                     url = new URL(
-                            "http://192.168.0.147:9000/mysqlserver/list?" +
+                            "http://192.168.0.215:9000/mysqlserver/list?" +
                                     "pageno=" + pageNo);
                 }else if(idx == 1){
                     url = new URL(
-                            "http://192.168.0.147:9000/mysqlserver/list?"
+                            "http://192.168.0.215:9000/mysqlserver/list?"
                                     + "searchtype=itemname&" + "value=" +
                                     value.getText().toString() + "&pageno="
                                     +pageNo
                     );
                 }else if(idx == 2){
                     url = new URL(
-                            "http://192.168.0.147:9000/mysqlserver/list?"
+                            "http://192.168.0.215:9000/mysqlserver/list?"
                                     + "searchtype=description&" + "value=" +
                                     value.getText().toString() + "&pageno="
                                     +pageNo
                     );
                 }else{
                     url = new URL(
-                            "http://192.168.0.147:9000/mysqlserver/list?"
+                            "http://192.168.0.215:9000/mysqlserver/list?"
                                     + "searchtype=both&" + "value=" +
                                     value.getText().toString() + "&pageno="
                                     +pageNo
